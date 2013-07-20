@@ -1,6 +1,6 @@
 GaBooker::Application.routes.draw do
 
-  root :to => 'rooms#index'
+  root :to => 'home#index'
   resources :rooms
 
   resources :users, :except => [:edit] do

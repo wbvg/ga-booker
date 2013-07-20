@@ -2,7 +2,7 @@ body {
   background-color: yellow;
   padding-top: 100px;
   padding-bottom: 40px;
-
+  font-size: 18px;
 }
 
 .brand {
@@ -15,5 +15,32 @@ h2 {
   color: #273d2e;
 }
 
+button.cta_button {
+  background-color: #c20027;
+  padding: 10px;
+  font-size: 28px;
+  width: 300px;
+  height: 70px;
+  text-align: center;
+  a {
+     color: #fff;
+     text-decoration: none;
+    }
+  a:hover {
+        background-color: #53000a;
+    }
+  }
 
-.booked {}
+#users {
+
+  background-color: #ccc;
+  color: #333;
+}
+
+
+
+
+.booked {
+  background-color: #c20027;
+
+}

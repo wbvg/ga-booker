@@ -1,0 +1,11 @@
+%table#users
+  - @users.each do |user|
+    %tr
+      %td
+        - if user.is_admin?
+          %span.name.btn btn-danger= user.name
+        - else
+          %span.name.btn btn-success = user.name
+      %td
+           %span= user.email
+      %td= link_to('Delete', user, :method => :delete, :confirm => 'Really?', :class => 'btn btn-danger') if user != @auth
