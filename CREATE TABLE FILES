@@ -1,0 +1,31 @@
+class AddUsersTable < ActiveRecord::Migration
+ def change
+    create_table :users do |t|
+      t.string :name
+      t.string :email
+      t.string :password_digest
+      t.timestamps
+    end
+  end
+end
+
+
+class AddBookingsTable < ActiveRecord::Migration
+  def  change
+      create_table :bookings do |t|
+      t.string :status
+      t.timestamps
+    end
+  end
+end
+
+
+class AddRoomsTable < ActiveRecord::Migration
+   def change
+    create_table :users do |t|
+      t.string :name
+      t.string :description
+      t.timestamps
+    end
+  end
+end
