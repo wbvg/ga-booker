@@ -1,5 +1,5 @@
 .container
-  = render(:partial => '/shared/errors')
+  = render(:partial => 'shared/errors')
   = form_for @user do |f|
     = f.label :name
     = f.text_field :name, :autofocus => true
