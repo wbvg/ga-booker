@@ -17,7 +17,7 @@ class Booking < ActiveRecord::Base
   belongs_to :room
   belongs_to :user
 
-  validates :name, :presence => true
+  validates :description, :presence => true
   validates :time, :presence => true
   validates :date, :presence => true
 end
