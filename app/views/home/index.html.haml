@@ -1,5 +1,16 @@
-/ This is home
-
-%h2 Hello world
-
-<%=
+-# WELCOME PAGE
+- if user_signed_in?
+  .banner-2
+    %h1 BOOK A ROOM
+- else
+  %h2 Welcome to GA - Booker
+	%section.content-area-grey.arrow-down
+  	.grid-row.two-flipped.max-width.has-padding
+    	.column.image-wrapper
+      	%img{:alt => "Courses-papercraft", :src => "/images/welcome.jpg"}/
+    	.column{:style => "padding-right:10%"}
+	      %button.cta_button/
+	      %a{:href => "#"} Enroll in a Course
+	      %img{:alt => "whoa", :src => "/images/postit.jpg"}/
+	%section#link-courses.content-area-white.link-section
+  	%header.max-width.has-padding.visit-metro/
