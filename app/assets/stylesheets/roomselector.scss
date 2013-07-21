@@ -1,17 +1,55 @@
+div.booking-container {
+padding: 5px;
+text-align: center;
+margin: 0 auto;
+}
+
+// div.hero-unit {
+//   padding: 0px !important;
+// }
+
 #droppable {
   width: 150px;
   height: 150px;
   padding: 0.5em;
-  float: left;
   margin: 10px;
+  display:block;
+}
+
+.room1 {
+  background-image: url(../images/ga_room1.png);
+  height: 180px;
+  width: 191px;
+}
+
+.room2 {
+  background-image: url(../images/ga_room2.png);
+  height: 161px;
+  width: 191px;
+}
+
+.room3 {
+  background-image: url(../images/ga_room3.png);
+  height: 151px;
+  width: 191px;
+}
+
+.pres-room {
+  background-image: url(../images/ga_pres.png);
+  height: 492px;
+  width: 177px;
+}
+
+.kitchen {
+  background-image: url(../images/ga_kitchen.png);
+  height: 492px;
+  width: 81px;
 }
 
 .draggable {
   width: 100px;
   height: 100px;
   padding: 0.5em;
-  float: left;
-  margin: 10px 10px 10px 0;
 }
 
 .draggable-nonvalid {
@@ -24,4 +62,5 @@
 
 .booked {
    background-color: #c20027;
+   border: 10px solid #c20027;
 }
