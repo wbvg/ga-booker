@@ -13,5 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
+//= require bootstrap-responsive
 //= require 'jquery-ui'
+//=require 'roomselector'
 //= require_tree .

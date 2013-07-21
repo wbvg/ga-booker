@@ -1,4 +1,7 @@
-   $( ".draggable" ).draggable({
+
+$(document).ready(function () {
+
+$( ".draggable" ).draggable({
       revert: 'invalid'
     });
     $( "#droppable" ).droppable({
@@ -13,3 +16,6 @@
             $( this ).addClass( "booked" );
       }
     });
+
+
+  });

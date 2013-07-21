@@ -12,7 +12,7 @@
   <script>
   $(function() {
     // $( "#draggable, #draggable-nonvalid" ).draggable();
-    $("#droppable:not(#draggable)").css("#droppable-nonvalid");
+    $(".droppable:not(.draggable)").css(".droppable-nonvalid");
     $("#droppable").attr("disabled", "disabled");
     $( "#droppable" ).droppable({
       accept: "#draggable",

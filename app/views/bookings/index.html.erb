@@ -1,38 +1,19 @@
 <h2>Select a room</h2>
 <h4>Drag the GA logo on to your choice of rooms</h4>
-<head>
+
 <!-- / This booking home -->
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
-  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 
-<script>
-     $( ".draggable" ).draggable({
-      revert: 'invalid'
-    });
-    $( "#droppable" ).droppable({
-      accept: function( event, ui) {
-        // Reject drops if room is booked.
-        return ! $(this).is('.booked');
-      },
-      activeClass: "ui-state-hover",
-      hoverClass: "ui-state-active",
-      revert: true,
-      drop: function( event, ui ) {
-            $( this ).addClass( "booked" );
-      }
-    });
-</script>
 
 
 </head>
-<body>
 
-<div id="draggable-nonvalid" class="ui-widget-content">
+
+<div class="ui-widget-content draggable">
   <p>I'm draggable but can't be droppedddd</p>
 </div>
 
-<div id="draggable" class="ui-widget-content">
+<div class="ui-widget-content draggable">
   <p>Drag me to my target</p>
 </div>
 
