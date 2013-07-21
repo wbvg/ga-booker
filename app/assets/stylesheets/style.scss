@@ -29,7 +29,19 @@ $yellow: #EFAE1B;
 
 .navbar-inner {
   @include box-shadow(none !important);
-  border: 0;
+  border: 20;
+
+}
+
+.navbar-form {
+  list-style: none;
+  padding-top: 10px;
+}
+
+.navbar-form li {
+  display: inline;
+  margin: 10px;
+  padding-top: 20px;
 }
 
 /* FOOTER NAVIGATION */
@@ -45,7 +57,7 @@ $yellow: #EFAE1B;
   a:hover {
     color: #E13E06;
   }
-} 
+}
 
 a {
 color: $darkpink;
@@ -61,6 +73,7 @@ text-decoration: none;
   width: 200px;
   height: 45px;
   display: block;
+  padding-top: 10px;
 }
 
 h2 {
