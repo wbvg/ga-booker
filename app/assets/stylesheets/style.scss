@@ -3,7 +3,7 @@ $navbarBackgroundHighlight: white;
 $navbarBackground: white;
 $btnPrimaryBackground: black;
 $navbarLinkColor: black;
-$navbarLinkColorHover: #E13E06;
+$navbarLinkColorHover: #FF0000;
 
 @import 'bootstrap';
 body {
@@ -36,6 +36,7 @@ $yellow: #EFAE1B;
 .navbar-form {
   list-style: none;
   padding-top: 10px;
+  color: #fff
 }
 
 .navbar-form li {
@@ -55,17 +56,17 @@ $yellow: #EFAE1B;
     text-decoration: none;
   }
   a:hover {
-    color: #E13E06;
+    color: #FF0000;
   }
 }
 
 a {
-color: $darkpink;
+color: #ffffff;
 text-decoration: none;
 }
 
 a:hover {
-color: $blue;
+color: #ff0000;
 text-decoration: none;
 }
 
@@ -77,7 +78,7 @@ text-decoration: none;
 }
 
 h2 {
-  color: #273d2e;
+  color: #ff0000;
 }
 
 button.cta_button {
@@ -89,7 +90,7 @@ button.cta_button {
   text-align: center;
   margin: auto;
   a {
-     color: #fff;
+     color: #ffffff;
      text-decoration: none;
     }
   a:hover {
