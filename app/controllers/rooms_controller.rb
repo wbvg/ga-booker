@@ -2,7 +2,7 @@ class RoomsController < ApplicationController
   before_filter :check_if_admin, :only => [:new, :create, :edit, :update]
 
   def index
-    @rooms = Room.order(:name)
+    @rooms = Room.all
   end
 
   def new
