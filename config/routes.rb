@@ -16,13 +16,9 @@ GaBooker::Application.routes.draw do
   end
 
   # resources :users, :only => [:index, :new, :create]
-  resources :bookings, :only => [:index, :create]
-
+  # resources :bookings, :only => [:index, :create]
 
    get '/login' => 'session#new'
    post '/login' => 'session#create'
    delete '/login' => 'session#destroy'
-
-
-
 end

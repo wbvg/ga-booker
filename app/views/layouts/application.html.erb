@@ -20,16 +20,18 @@
       <!-- Main hero unit for a primary marketing message or call to action -->
       <div class="hero-unit">
         <% if flash[:notice].present? %>
-    <div class="row">
+         <div class="row">
           <div class="column small-5 alert-box alert">
             <%= flash[:notice] %>
           </div>
           <div class="columns small-7"></div>
-    </div>
-    <% end %>
-<%= yield %>
+         </div>
+        <% end %>
+
+       <%= yield %>
 
       </div>
+
         <%= render 'layouts/footer' %>
 
     </div> <!-- /container -->
