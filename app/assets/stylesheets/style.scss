@@ -1,8 +1,60 @@
+/* NAVIGATION CUSTOMISATIONS */
+$navbarBackgroundHighlight: white;
+$navbarBackground: white;
+$btnPrimaryBackground: black;
+$navbarLinkColor: black;
+$navbarLinkColorHover: #E13E06;
+
+@import 'bootstrap';
 body {
-  background-color: yellow;
+  background-color: $white;
   padding-top: 100px;
   padding-bottom: 40px;
   font-size: 18px;
+}
+
+@import 'bootstrap-responsive';
+
+/* UNIVERSAL COLOURS */
+
+$orange: #E13E06;
+$green: #2ECC71;
+$blue: #4099FF;
+$darkpink: #D9014F;
+$pink: #FC658E;
+$mould: #A9AB19;
+$white: #fff;
+$red: #FF0000;
+$yellow: #EFAE1B;
+
+.navbar-inner {
+  @include box-shadow(none !important);
+  border: 0;
+}
+
+/* FOOTER NAVIGATION */
+.footer {
+  margin-top: 50px;
+  padding: 10px;
+  color: $white;
+  background-color: black;
+  a{
+    color: $white;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #E13E06;
+  }
+} 
+
+a {
+color: $darkpink;
+text-decoration: none;
+}
+
+a:hover {
+color: $blue;
+text-decoration: none;
 }
 
 .brand {
