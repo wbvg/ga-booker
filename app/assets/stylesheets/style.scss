@@ -30,7 +30,6 @@ $yellow: #EFAE1B;
 .navbar-inner {
   @include box-shadow(none !important);
   border: 20;
-
 }
 
 .navbar-form {
@@ -99,9 +98,16 @@ button.cta_button {
   }
 
 #users {
-
-  background-color: #ccc;
-  color: #333;
+  width: 600px;
+  height: 350px;
+  background-color: #fff;
+  color: #000;
+  margin: auto;
+  .name.alert.radius{
+    color: #000;
+    background-color: #2ECC71;
+    font-weight: bold;
+  }
 }
 
 .booked {
@@ -111,4 +117,5 @@ button.cta_button {
 div.ga_action {
   text-align: center;
 }
+
 
