@@ -16,7 +16,7 @@ module ApplicationHelper
       links << " #{link_to('Logout ' + @auth.name, login_path, :method => :delete, :confirm => 'Really?')}</li>"
       links << "</li>"
     else
-      links << "<li>#{link_to('Create Account', new_user_path)}</li>"
+      links << "<li>#{link_to('Signup', new_user_path)}</li>"
       links << "<li>#{link_to('Login', login_path)}</li>"
     end
 

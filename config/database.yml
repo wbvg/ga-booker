@@ -18,7 +18,7 @@ development:
   database: ga_booker_development
   pool: 5
   host: localhost
-  username: michaelcorrea
+  username: Ryan
   password:
 
   # Connect on a TCP socket. Omitted by default since the client uses a
