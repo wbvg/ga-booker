@@ -1,0 +1,24 @@
+%ul#bookings.no-bullet
+  - @bookings.each do |booking|
+    %li
+      %span.time= booking.time
+      %span.date= booking.date
+      %span.description= booking.description
+      %span.room_id= booking.room_id
+
+%div.row
+  %div.columns.large-3
+    %div.controls
+      %div.new
+        = button_tag 'New Booking', :id => 'new_booking', :class => 'button radius success tiny'
+      %div.form.invisible
+        = form_tag do
+          = label_tag 'time'
+          = text_field_tag 'time'
+          = label_tag 'date'
+          = text_field_tag 'date'
+          = label_tag 'description'
+          = text_field_tag 'description'
+          = link_to('Cancel', '#', :id=>'cancel_booking', :class => 'button radius tiny alert')
+          = submit_tag 'Create New booking', :id => 'create_booking', :class => 'button radius tiny'
+  %div.columns.large-9

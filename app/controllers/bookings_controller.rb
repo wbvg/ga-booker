@@ -2,7 +2,7 @@ class BookingsController < ApplicationController
 before_filter :check_if_admin, :only => [:new, :create, :edit, :update]
 
   def index
-    @bookings = Booking.order(:name)
+    @bookings = Booking.order(:time)
   end
 
   def new
