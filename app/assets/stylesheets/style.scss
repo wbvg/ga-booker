@@ -3,7 +3,7 @@ $navbarBackgroundHighlight: white;
 $navbarBackground: white;
 $btnPrimaryBackground: black;
 $navbarLinkColor: black;
-$navbarLinkColorHover: #E13E06;
+$navbarLinkColorHover: #FF0000;
 
 @import 'bootstrap';
 body {
@@ -29,7 +29,19 @@ $yellow: #EFAE1B;
 
 .navbar-inner {
   @include box-shadow(none !important);
-  border: 0;
+  border: 20;
+}
+
+.navbar-form {
+  list-style: none;
+  padding-top: 10px;
+  color: #fff
+}
+
+.navbar-form li {
+  display: inline;
+  margin: 10px;
+  padding-top: 20px;
 }
 
 /* FOOTER NAVIGATION */
@@ -43,17 +55,17 @@ $yellow: #EFAE1B;
     text-decoration: none;
   }
   a:hover {
-    color: #E13E06;
+    color: #FF0000;
   }
-} 
+}
 
 a {
-color: $darkpink;
+color: #ffffff;
 text-decoration: none;
 }
 
 a:hover {
-color: $blue;
+color: #ff0000;
 text-decoration: none;
 }
 
@@ -61,10 +73,11 @@ text-decoration: none;
   width: 200px;
   height: 45px;
   display: block;
+  padding-top: 10px;
 }
 
 h2 {
-  color: #273d2e;
+  color: #ff0000;
 }
 
 button.cta_button {
@@ -74,8 +87,9 @@ button.cta_button {
   width: 300px;
   height: 70px;
   text-align: center;
+  margin: auto;
   a {
-     color: #fff;
+     color: #ffffff;
      text-decoration: none;
     }
   a:hover {
@@ -84,12 +98,24 @@ button.cta_button {
   }
 
 #users {
-
-  background-color: #ccc;
-  color: #333;
+  width: 600px;
+  height: 350px;
+  background-color: #fff;
+  color: #000;
+  margin: auto;
+  .name.alert.radius{
+    color: #000;
+    background-color: #2ECC71;
+    font-weight: bold;
+  }
 }
 
 .booked {
   background-color: #c20027;
-
 }
+
+div.ga_action {
+  text-align: center;
+}
+
+
