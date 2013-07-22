@@ -4,10 +4,12 @@ before_filter :check_if_admin, :only => [:new, :create, :edit, :update]
   def index
     @bookings = Booking.order(:time)
     @rooms = Room.all
+    @users = User.all
   end
 
   def new
     @booking = Booking.new
+    @room = Room.all
   end
 
   def create

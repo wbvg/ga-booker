@@ -1,17 +1,13 @@
 %ul#bookings.no-bullet
   - @bookings.each do |booking|
     %li
-      %span.time= booking.time
-      %span.date= booking.date
-      %span.description= booking.description
-      %span.room_id= booking.room_id
-
-
+      %span= booking.time
+      %span= booking.date
+      %span= booking.description
+      %span= booking.try(:room).try(:name)
 
 / %div.row
 /   %div.columns.large-3
 /     %div.controls
 /       %div.new
 /         = button_tag 'New Booking', :id => 'new_booking', :class => 'button radius success tiny'
-
-
