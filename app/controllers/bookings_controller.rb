@@ -10,9 +10,6 @@ before_filter :check_if_admin, :only => [:new, :create, :edit, :update]
     @booking = Booking.new
   end
 
-  def form
-  end
-
   def create
     @booking = Booking.new(params[:booking])
     if
