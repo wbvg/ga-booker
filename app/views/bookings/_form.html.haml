@@ -1,0 +1,11 @@
+%div.form
+  = form_tag do
+    = label_tag 'time'
+    = text_field_tag 'time'
+    = label_tag 'date'
+    = text_field_tag 'date'
+    = label_tag 'description'
+    = text_field_tag 'description'
+    = link_to('Cancel', '#', :id=>'cancel_booking', :class => 'button radius tiny alert')
+    = submit_tag 'Create New booking', :id => 'create', :class => 'button radius tiny'
+%div.columns.large-9

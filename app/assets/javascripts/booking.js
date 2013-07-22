@@ -35,6 +35,8 @@ $(document).ready(function (){
 
    return false;
   };
+$('#create').on('click', 'create_booking', edit_booking);
+
 
   var edit_booking = function () {
     var color = $(this).css('background-color');

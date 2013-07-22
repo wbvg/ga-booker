@@ -1,4 +1,5 @@
 $(document).ready(function () {
+var url = "#booky";
 
 
 $( ".draggable" ).draggable({
@@ -16,7 +17,9 @@ $( ".draggable" ).draggable({
       revert: true,
       drop: function( event, ui ) {
             $( this ).addClass( "booked" );
+      $(location).attr('href',url);
       }
+
 
     });
 
